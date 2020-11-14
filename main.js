@@ -15,6 +15,7 @@ const selectCurrency = document.getElementById('currencies');
 
 let cart = [];
 let buttonsDOM = [];
+let prices = [];
 
 const convertedCur = document.getElementById('converted-currency');
 const conversionResult = document.createElement('p');
@@ -249,17 +250,12 @@ class ShoppingCart {
         selectCurrency.options[selectCurrency.selectedIndex].innerText
       }`;
       console.log(
+        'selectCurrency.value =>',
         selectCurrency.value // currency value
       );
     });
   }
 
-
-  convertPrice(prodPrice, value) {
-    prodPrice.forEach(price => {
-      console.log('prodPrice=>', price, ':', value);
-    })
-  }
 
   getUser() {
     const user = document.getElementById('user');
