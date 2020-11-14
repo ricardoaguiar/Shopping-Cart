@@ -109,9 +109,9 @@ class ShoppingCart {
     const div = document.createElement('div');
     div.classList.add('cart-item');
     div.innerHTML = `
-              <img src=${item.imgUrl} alt="photo" class="product-img-cart" />
+              <img src=${item.image} alt="photo" class="product-img-cart" />
               <div>
-                <h5>${item.name}</h5>
+                <h5>${item.title}</h5>
                 <h5>€ ${item.price}</h5>
                 <button type="button" class="btn btn-outline-danger btn-sm remove-item" data-id=${item.id}>remove</button>
               </div>
