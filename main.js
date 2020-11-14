@@ -105,7 +105,6 @@ class ShoppingCart {
     // console.log(cartTotal, cartItems);
   }
 
-  // eslint-disable-next-line class-methods-use-this
   addToCart(item) {
     const div = document.createElement('div');
     div.classList.add('cart-item');
@@ -301,7 +300,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   products
     .getProducts()
-    // eslint-disable-next-line no-shadow
     .then(products => {
       shoppingCart.renderProducts(products);
       Storage.saveProducts(products);
