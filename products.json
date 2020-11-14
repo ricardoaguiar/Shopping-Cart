@@ -2,32 +2,32 @@
   "items": [
     {
       "id": "1",
-      "imgUrl": "src/imgs/M63H24W7JF0-L302-ALTGHOST.jpg",
-      "name": "CHECK PRINT SHIRT",
+      "image": "src/imgs/M63H24W7JF0-L302-ALTGHOST.jpg",
+      "title": "CHECK PRINT SHIRT",
       "price": 110
     },
     {
       "id": "2",
-      "imgUrl": "src/imgs/FLGLO4FAL12-BEIBR.jpg",
-      "name": "GLORIA HIGH LOGO SNEAKER",
+      "image": "src/imgs/FLGLO4FAL12-BEIBR.jpg",
+      "title": "GLORIA HIGH LOGO SNEAKER",
       "price": 91
     },
     {
       "id": "3",
-      "imgUrl": "src/imgs//HWVG6216060-TAN.jpg",
-      "name": "CATE RIGID BAG",
+      "image": "src/imgs//HWVG6216060-TAN.jpg",
+      "title": "CATE RIGID BAG",
       "price": 94
     },
     {
       "id": "4",
-      "imgUrl": "src/imgs/WC0001FMSWC-G5.jpg",
-      "name": "GUESS CONNECT WATCH",
+      "image": "src/imgs/WC0001FMSWC-G5.jpg",
+      "title": "GUESS CONNECT WATCH",
       "price": 438
     },
     {
       "id": "5",
-      "imgUrl": "src/imgs/AW6308VIS03.jpg",
-      "name": "'70s RETRO GLAM KEFIAH",
+      "image": "src/imgs/AW6308VIS03.jpg",
+      "title": "'70s RETRO GLAM KEFIAH",
       "price": 20
     }
   ]

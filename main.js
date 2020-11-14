@@ -28,8 +28,8 @@ class Products {
       const data = await res.json();
       let products = data.items;
       products = products.map(item => {
-        const { id, name, price, imgUrl } = item;
-        return { id, name, price, imgUrl };
+        const { id, title, price, image } = item;
+        return { id, title, price, image };
       });
       return products;
     } catch (error) {
@@ -47,11 +47,11 @@ class ShoppingCart {
       result += `
       <article class="product">
                 <div class="img-container">
-                <img src=${product.imgUrl} alt="product" class="product-img">
+                <img src=${product.image} alt="product" class="product-img">
                 </div>
                 <button class="bag-btn" data-id=${product.id}>
                 <i class="fas fa-shopping-cart"></i>add to cart</button>
-                <h3>${product.name}</h3>
+                <h3>${product.title}</h3>
                 <h4 id="prodPrice">€ ${product.price}</h4>
             </article>    
       `;
