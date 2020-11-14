@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const products = new Products();
   shoppingCart.setupApp();
 
-  products
+  products //instanceof Products()
     .getProducts()
     .then(products => {
       shoppingCart.renderProducts(products);
