@@ -210,14 +210,12 @@ class ShoppingCart {
   removeItem(id) {
     cart = cart.filter(item => item.id !== id);
     this.setCartTotal(cart);
-    // eslint-disable-next-line no-use-before-define
     Storage.saveCart(cart);
     const button = this.getSingleButton(id);
     button.disable = false;
     button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
   }
 
-  // eslint-disable-next-line class-methods-use-this
   getSingleButton(id) {
     return buttonsDOM.find(button => button.dataset.id === id);
   }
@@ -243,9 +241,8 @@ class ShoppingCart {
           // console.log('key', key, 'value', value);
           selectCurrency.appendChild(option);
         }
-        const { value } = selectCurrency.options[selectCurrency.selectedIndex];
-        const text =
-          selectCurrency.options[selectCurrency.selectedIndex].innerText;
+        //const { value } = selectCurrency.options[selectCurrency.selectedIndex];
+        //const text = selectCurrency.options[selectCurrency.selectedIndex].innerText;
         // console.log("value", value);
         // console.log("text",text);
       });
