@@ -59,8 +59,6 @@ class ShoppingCart {
     productDOM.innerHTML = result;
   }
 
-
-
   getCartButton() {
     const buttons = [...document.querySelectorAll('.bag-btn')];
     // console.log(buttons);
@@ -95,7 +93,6 @@ class ShoppingCart {
     });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   setCartTotal(cart) {
     let tempTotal = 0;
     let itemsTotal = 0;
@@ -128,7 +125,6 @@ class ShoppingCart {
     // console.log(cartContent);
   }
 
-  // eslint-disable-next-line class-methods-use-this
   showCart() {
     cartOverlay.classList.add('cart-visibility');
     cartDOM.classList.add('showCart');
@@ -147,7 +143,6 @@ class ShoppingCart {
     cart.forEach(item => this.addToCart(item));
   }
 
-  // eslint-disable-next-line class-methods-use-this
   hideCart() {
     cartOverlay.classList.remove('cart-visibility');
     cartDOM.classList.remove('showCart');
@@ -196,7 +191,6 @@ class ShoppingCart {
   }
 
   clearCart() {
-    // eslint-disable-next-line no-shadow
     const cartItems = cart.map(item => item.id);
     // console.log(cartItems);
     cartItems.forEach(id => this.removeItem(id));
