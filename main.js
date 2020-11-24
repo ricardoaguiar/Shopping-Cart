@@ -305,7 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
       shoppingCart.cartLogic();
     });
 
-  shoppingCart.convertCurrency();
   shoppingCart.getRates();
   shoppingCart.getUser();
 });
